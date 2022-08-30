@@ -13,7 +13,8 @@ resource "digitalocean_droplet" "bastion" {
     region = var.region
     
     # Size of the bastion. Can be small since it's only doing ssh
-    size = "s-1vcpu-1gb"
+    # size = "s-1vcpu-1gb"
+    size = "s-1vcpu-512mb-10gb"
 
     # The ssh keys to put on the server so we can access it. Read in through a 
     # data source
