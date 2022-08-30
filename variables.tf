@@ -34,7 +34,7 @@ variable "name" {
 # The region to deploy our infrastructure to.
 variable "region" {
     type    = string
-    default = "nyc3"
+    default = "nyc1"
 }
 
 
