@@ -22,6 +22,21 @@ resource "digitalocean_droplet" "bastion" {
 
     # What VPC to put our droplets in
     vpc_uuid = digitalocean_vpc.web.id
+
+    #--------------------------------------------------------------------------#
+    # Use user data, also known as cloud-init, to do an initial configuration  #
+    # of the servers. This example is just for demonstration. In reality it    #
+    # would probably be more advantageous to use a configuration management    #
+    # system after server initialization.                                      #
+    #--------------------------------------------------------------------------#
+
+    # add digitalocean monitoring
+    user_data = <<EOF
+    packages:
+        - nginx
+    runcmd:
+        - curl -sSL https://repos.insights.digitalocean.com/install.sh | bash
+    EOF
 }
 
 ################################################################################

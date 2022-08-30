@@ -41,6 +41,7 @@ resource "digitalocean_droplet" "web" {
         - postgresql
         - postgresql-contrib
     runcmd:
+        - curl -sSL https://repos.insights.digitalocean.com/install.sh | sudo bash
         - wget -P /var/www/html https://raw.githubusercontent.com/do-community/terraform-sample-digitalocean-architectures/master/01-minimal-web-db-stack/assets/index.html
         - sed -i "s/CHANGE_ME/web-${var.region}-${count.index +1}/" /var/www/html/index.html
     EOF
