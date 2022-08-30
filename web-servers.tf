@@ -34,6 +34,10 @@ resource "digitalocean_droplet" "web" {
     # would probably be more advantageous to use a configuration management    #
     # system after server initialization.                                      #
     #--------------------------------------------------------------------------#
+
+    # add digitalocean monitoring
+    monitoring = true
+
     user_data = <<EOF
     #cloud-config
     packages:

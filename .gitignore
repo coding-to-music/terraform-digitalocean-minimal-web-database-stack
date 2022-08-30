@@ -4,3 +4,5 @@
 .terraform.lock.hcl
 .env
 terraform.tfvars
+*.log
+./logs

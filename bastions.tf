@@ -31,11 +31,13 @@ resource "digitalocean_droplet" "bastion" {
     #--------------------------------------------------------------------------#
 
     # add digitalocean monitoring
+    monitoring = true
+
     user_data = <<EOF
     packages:
         - nginx
     runcmd:
-        - curl -sSL https://repos.insights.digitalocean.com/install.sh | bash
+        - curl -sSL https://repos.insights.digitalocean.com/install.sh | sudo bash
     EOF
 }
 
