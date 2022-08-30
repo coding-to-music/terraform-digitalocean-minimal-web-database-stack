@@ -1,0 +1,21 @@
+{
+  "name": "terraform-digitalocean-minimal-web-database-stack",
+  "version": "1.0.0",
+  "description": "This repository is a collection of sample architectures using multiple [DigitalOcean](https://www.digitalocean.com/) products to produce production ready environments for code to be deployed. All architectures are deployed via [Terraform](https://www.terraform.io/).",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "git add . && git commit -m Build && git push",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coding-to-music/terraform-sample-digitalocean-architectures.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coding-to-music/terraform-sample-digitalocean-architectures/issues"
+  },
+  "homepage": "https://github.com/coding-to-music/terraform-sample-digitalocean-architectures#readme"
+}
