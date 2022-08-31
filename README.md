@@ -8,6 +8,8 @@ From / By https://github.com/do-community/terraform-sample-digitalocean-architec
 
 https://github.com/do-community/terraform-sample-digitalocean-architectures
 
+https://letsencrypt.org/docs/rate-limits/
+
 ## Environment variables:
 
 ```java
