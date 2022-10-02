@@ -11,3 +11,7 @@ resource "digitalocean_vpc" "web"{
     # The private ip range within our VPC
     ip_range = "192.168.32.0/24"
 }
+
+# resource "digitalocean_domain" "web" {
+#   name = var.domain_name
+# }
